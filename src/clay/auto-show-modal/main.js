@@ -1,9 +1,4 @@
 var editing = !!document.getElementsByClassName('fragments-editor').length;
-var fragmentEditor = window.location !== window.parent.location;
-
-if (fragmentEditor) {
-	$('body').addClass('fragment-preview');
-}
 
 if (editing) {
 	console.log($(fragmentElement).parents('.fragment-entry-link-wrapper').first());
@@ -32,15 +27,16 @@ if (editing) {
 			body.removeClass('fragment-modal-open');
 		}
 	);
-}
 
-if (!editing && !fragmentEditor) {
+	fragment.find('.btn[data-dismiss="modal"]').first().attr('data-dismiss', 'none');
+}
+else {
 	var modal = $(fragmentElement).find('.modal').first();
 	
 	setTimeout(
 		function() {
 			modal.modal();
 		},
-		2000
+		3000
 	);
 }
