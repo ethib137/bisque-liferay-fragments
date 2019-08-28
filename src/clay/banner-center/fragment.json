@@ -1,0 +1,9 @@
+{
+	"configurationPath": "main.json",
+	"jsPath": "main.js",
+	"htmlPath": "index.html",
+	"cssPath": "styles.css",
+	"name": "Banner Center",
+	"thumbnailPath": "thumbnail.png",
+	"type": "section"
+}

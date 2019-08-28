@@ -1,0 +1,54 @@
+.fragment_35157 {
+}.fragment-carousel {
+	position: relative;
+}
+
+.fragment-carousel lfr-editable[type="image"] {
+	width: 100%;
+}
+
+.fragment-carousel .carousel-item img {
+  background-color: rgba(0, 0, 0, .5);
+  min-height: 100px;
+}
+
+.fragment-carousel .carousel-caption {
+	background-color: rgba(0, 0, 0, 0.5);
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.fragment-carousel .play-pause {
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 50%;
+	color: #FFF;
+	cursor: pointer;
+	opacity: 0;
+	padding: 10px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	z-index: 2;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.fragment-carousel:hover .play-pause {
+	opacity: 1;
+}
+
+.fragment-carousel .play-pause.paused .icon-pause {
+	display: none;
+}
+
+.fragment-carousel .play-pause .icon-pause {
+	display: block;
+}
+
+.fragment-carousel .play-pause.paused .icon-play {
+	display: block;
+}
+
+.fragment-carousel .play-pause .icon-play {
+	display: none;
+}
