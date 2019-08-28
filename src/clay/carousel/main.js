@@ -4,9 +4,8 @@ console.log(window);
 
 if (!window.__carousel_registered) {
 	$(fragmentElement).on(
-		'click', 
-		'.play-pause',
-		{},
+		'click',
+		'.play-pause', {},
 		function(event) {
 			console.log(event);
 
@@ -15,8 +14,7 @@ if (!window.__carousel_registered) {
 			if (pause.hasClass('paused')) {
 				carousel.carousel('next');
 				carousel.carousel('cycle');
-			}
-			else {
+			} else {
 				carousel.carousel('pause');
 			}
 

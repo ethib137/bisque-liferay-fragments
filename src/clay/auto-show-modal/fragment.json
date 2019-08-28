@@ -1,7 +1,7 @@
 {
-	"jsPath": "main.js",
-	"htmlPath": "index.html",
 	"cssPath": "styles.css",
+	"htmlPath": "index.html",
+	"jsPath": "main.js",
 	"name": "Auto Show Modal",
 	"thumbnailPath": "thumbnail.png",
 	"type": "section"
