@@ -1,0 +1,9 @@
+{
+	"configurationPath": "main.json",
+	"cssPath": "styles.css",
+	"htmlPath": "index.html",
+	"jsPath": "main.js",
+	"name": "Carousel Jumbotron",
+	"thumbnailPath": "thumbnail.png",
+	"type": "section"
+}

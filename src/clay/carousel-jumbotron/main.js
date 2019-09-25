@@ -1,20 +1,20 @@
-var carousel = $('.fragment-carousel .carousel');
-
-console.log(window, carousel);
-
-if (!window.__carousel_registered) {
+if (!window.__carousel_jumbotron_registered) {
 	$(document).on(
 		'click',
-		'.fragment-carousel .play-pause',
+		'.fragment-carousel-jumbotron .play-pause',
 		function(event) {
 			console.log(event);
+
+			var carousel = $('.fragment-carousel-jumbotron .carousel');
 
 			var pause = $(event.currentTarget);
 
 			if (pause.hasClass('paused')) {
+				console.log('play');
 				carousel.carousel('next');
 				carousel.carousel('cycle');
 			} else {
+				console.log('pause');
 				carousel.carousel('pause');
 			}
 
@@ -23,4 +23,4 @@ if (!window.__carousel_registered) {
 	);
 }
 
-window.__carousel_registered = true;
+window.__carousel_jumbotron_registered = true;
